@@ -11,7 +11,7 @@ The script could easily be modified for use with custom HMAC authentication sche
 2. Add two environment variables at Postman's "Manage Environments" settings dialog. `keyId` containing the ID or username of the API consumer, and `secret` containing the shared secret key.
 
     ![Manage Environments](/screenshots/postman-manage-env.png?raw=true)
-3. On the "Headers" tab click "Bulk Edit" and paste the following into the headers field. Note that the `Content-Type` header must be set manually to the content type of your request. The other headers will be generated automatically by the script.
+3. On the "Headers" tab click "Bulk Edit" and paste the following content into the headers field. Note that the `Content-Type` header must be set manually to the content type of your request. The other headers will be generated automatically by the script.
 
         Authorization:{{auth-header}}
         Date:{{date-header}}
