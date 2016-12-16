@@ -7,6 +7,7 @@ More specifically, Kong's [HMAC Authentication Plugin](https://getkong.org/plugi
 
 1. Copy the contents of [postman-pre-request-script.js](postman-pre-request-script.js) into the "Pre-request Script" tab in Postman.
 2. Add two environment variables at Postman's "Manage Environments" settings dialog. `keyId` containing the ID or username of the API consumer, and `secret` containing the shared secret key.
+![Manage Environments](/screenshots/postman-manage-env.png?raw=true)
 3. On the "Headers" tab click "Bulk Edit" and paste the following into the headers field. Note that the `Content-Type` header must be set manually to the content type of your request. The other headers will be generated automatically by the script.
 
         Authorization:{{auth-header}}
@@ -14,7 +15,7 @@ More specifically, Kong's [HMAC Authentication Plugin](https://getkong.org/plugi
         Content-MD5:{{content-md5}}
         Content-Length:{{content-length}}
         Content-Type:application/json
-
+        
 4. Send the request. 
 
 ## Modifying Signature Headers
