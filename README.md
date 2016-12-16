@@ -15,7 +15,8 @@ More specifically, Kong's [HMAC Authentication Plugin](https://getkong.org/plugi
         Content-MD5:{{content-md5}}
         Content-Length:{{content-length}}
         Content-Type:application/json 
-![Headers](/screenshots/postman-headers.png?raw=true)
+    As shown below:
+    ![Headers](/screenshots/postman-headers.png?raw=true)
 4. Send the request. 
 
 ## Modifying Signature Headers
