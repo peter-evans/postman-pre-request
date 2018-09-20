@@ -1,7 +1,7 @@
 # Postman Pre-request script for HMAC Authentication with Kong
 This is javascript for use with [Postman](https://www.getpostman.com/)'s pre-request script feature.
 It generates HTTP request headers for HMAC authentication with [Kong](https://getkong.org/).
-More specifically, Kong's [HMAC Authentication Plugin](https://getkong.org/plugins/hmac-authentication/).
+More specifically, Kong's [HMAC Authentication Plugin](https://docs.konghq.com/hub/kong-inc/hmac-auth/).
 
 The script could easily be modified for use with custom HMAC authentication schemes.
 
