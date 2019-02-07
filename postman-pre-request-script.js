@@ -48,10 +48,10 @@ var requestLine = request.method + " " + targetUrl + " HTTP/1.1";
 var md5digest = CryptoJS.MD5(request.data);
 var base64md5 = CryptoJS.enc.Base64.stringify(md5digest);
 // Get the content-type header
-var contentType = request.headers["Content-Type"];
+var contentType = request.headers["content-type"];
 // Set the content-length header
 var contentLength = 0;
-if (request.data) {
+if (request.data.length) {
   contentLength = request.data.length;
 }
 
